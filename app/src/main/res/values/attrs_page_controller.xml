@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="PagerController">
+        <!--页面的总数-->
+        <attr name="numberOfPage" format="integer"/>
+        <!--当前处于那一页-->
+        <attr name="currentPage" format="integer"/>
+        <!--页面之间的间距-->
+        <attr name="pagePadding" format="integer"/>
+        <!--页面的样式，包括选中和没有选中-->
+        <attr name="pageResource" format="reference"/>
+    </declare-styleable>
+</resources>
