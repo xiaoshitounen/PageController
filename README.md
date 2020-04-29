@@ -1,9 +1,11 @@
 # PageController 页面控制器 
 
 简介：
+
 用于控制页面之间的切换，你可以自定义页面控制点的样式，页面控制点之间动画切换的效果，回调当前页面值。
 
 app模块是使用例子，其运行效果：
+
 ![](https://github.com/xiaoshitounen/PageController/blob/master/self_view_page_controller.gif)
 
 ### 1. 添加依赖
