@@ -74,7 +74,7 @@ public class PagerController extends LinearLayout {
             this.setNumberOfPage(
                     typedArray.getInteger(
                             R.styleable.PagerController_numberOfPage,
-                            4)
+                            0)
             );
 
             //释放资源
