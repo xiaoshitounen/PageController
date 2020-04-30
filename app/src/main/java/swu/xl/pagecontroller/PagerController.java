@@ -14,7 +14,7 @@ import android.widget.LinearLayout;
 import androidx.annotation.Nullable;
 
 public class PagerController extends LinearLayout {
-    //页面数量 构造方法中传入
+    //页面数量
     private int numberOfPage;
 
     //页面之间的距离
@@ -104,13 +104,18 @@ public class PagerController extends LinearLayout {
             //获取触摸点的横坐标
             float x = event.getX();
 
-            //判断是否切换页面
+            //1.判断如何切换页面
             if (x > this.getWidth() / 2.0){
                 //向右切换
                 this.setCurrentPage((currentPage+1) % numberOfPage);
             }else {
                 //向左切换
                 this.setCurrentPage((currentPage-1+numberOfPage) % numberOfPage);
+            }
+
+            //2.回调事件
+            if (this.pageChangeListener != null) {
+                pageChangeListener.pageHasChange(this.currentPage);
             }
         }
 
@@ -189,12 +194,7 @@ public class PagerController extends LinearLayout {
         ImageView current_dot = (ImageView) this.getChildAt(this.currentPage);
         current_dot.setEnabled(false);
 
-        //4.回调事件
-        if (this.pageChangeListener != null) {
-            pageChangeListener.pageHasChange(this.currentPage);
-        }
-
-        //5.开启动画
+        //4.开启动画
         if (this.pageChangeAnimation != null) {
             pageChangeAnimation.changeAnimation(last_dot, current_dot);
         }
