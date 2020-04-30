@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--enable:false的情况-->
+    <item android:state_enabled="false">
+        <shape android:shape="oval">
+            <!--大小-->
+            <size android:width="40dp"
+                android:height="40dp"
+                />
+
+            <!--颜色-->
+            <solid android:color="#ff0000"/>
+        </shape>
+    </item>
+
+    <!--enable:true的情况，也是默认的情况-->
+    <item android:state_enabled="true">
+        <shape android:shape="oval">
+            <!--大小-->
+            <size android:width="40dp"
+                android:height="40dp"
+                />
+
+            <!--颜色-->
+            <solid android:color="#666666"/>
+        </shape>
+    </item>
+</selector>

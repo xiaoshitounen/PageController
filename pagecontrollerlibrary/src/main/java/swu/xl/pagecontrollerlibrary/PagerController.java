@@ -67,7 +67,7 @@ public class PagerController extends LinearLayout {
                     20);
             pageResource = typedArray.getResourceId(
                     R.styleable.PagerController_pageResource,
-                    0);
+                    R.drawable.page_controller_shape);
             currentPage = typedArray.getInteger(
                     R.styleable.PagerController_currentPage,
                     0);
