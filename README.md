@@ -1,5 +1,7 @@
 # PageController 页面控制器 
 
+详细内容博客地址:[自定义View-PageController](https://fanandjiu.com/%E8%87%AA%E5%AE%9A%E4%B9%89View-PageController/#more)
+
 简介：
 
 用于控制页面之间的切换，你可以自定义页面控制点的样式，页面控制点之间动画切换的效果，回调当前页面值。
