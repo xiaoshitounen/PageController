@@ -33,7 +33,7 @@ dependencies {
 
 ### 2. Xml文件中静态添加使用
 
-~~~
+~~~xml
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -69,7 +69,7 @@ dependencies {
 页面样式是一个xml文件，你可以自己定义你想要的样式。
 
 例子：
-~~~
+~~~xml
 <?xml version="1.0" encoding="utf-8"?>
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
 
@@ -106,7 +106,7 @@ dependencies {
 在Java代码里面创建动画切换类，并实现动画切换的方法。
 你可以对上一个页面和当前页面控制点进行动画。
 
-~~~
+~~~java
 //初始化
 PagerController pagerController = findViewById(R.id.page_controller);
 
@@ -121,7 +121,7 @@ pagerController.setPageChangeAnimation(new PagerController.PageChangeAnimation()
 
 例子：
 
-~~~
+~~~java
 //初始化
 PagerController pagerController = findViewById(R.id.page_controller);
 
@@ -143,7 +143,7 @@ pagerController.setPageChangeAnimation(new PagerController.PageChangeAnimation()
 
 回调的`currentPage`是页面的索引值而不是序列值。
 
-~~~
+~~~java
 //监听页面切换
 pagerController.setPageChangeListener(new PagerController.PageChangeListener() {
     @Override
