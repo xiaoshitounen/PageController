@@ -139,7 +139,7 @@ pagerController.setPageChangeAnimation(new PagerController.PageChangeAnimation()
 });
 ~~~
 
-#### 4.回调当前页面
+#### ④.回调当前页面
 
 回调的`currentPage`是页面的索引值而不是序列值。
 
